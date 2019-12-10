@@ -53,9 +53,21 @@ aside {
 
         .undo {
             grid-column: 1 / 2;
+            padding: 0 20px;
+
+            img {
+                width: 18px;
+                display: block;
+            }
         }
         .redo {
             grid-column: 2 / 3;
+            padding: 0 20px;
+
+            img {
+                width: 18px;
+                display: block;
+            }
         }
         .eraser {
             grid-column: 3 / 5;
