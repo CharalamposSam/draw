@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Paint</title>
+</head>
+<body>
+    <aside>
+
+        <div class="container">
+            <button class="story-post">Story</button>
+            <button class="downloadImage" title="png / 1080x1080">Download</button>
+            <button class="clearCanvas">Clear Canvas</button>
+            <button class="undo">U</button>
+            <button class="redo">R</button>
+            <button class="eraser">Eraser</button>
+            <input type="color" class="brushColor" value="#00a651">
+            <div class="brushSizeContainer">
+                <input type="range" class="brushSize" min="1" max="50" value="15">
+                <span class="brushSizeNum">15</span>
+            </div>
+            <div class="sizeButtons"></div>
+            <div class="colorButtons"></div>
+        </div>
+        
+
+    </aside>
+    
+    <main>
+
+        <canvas></canvas>
+       
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

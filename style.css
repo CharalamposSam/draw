@@ -1,0 +1,168 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #d7d7d7;
+  overflow: hidden;
+  position: relative;
+}
+
+aside {
+  min-width: 285px;
+  height: 100%;
+  background: #eeeeee;
+  padding: 30px;
+  position: fixed;
+}
+
+aside .container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (30px)[4] auto auto;
+  -ms-grid-columns: (1fr)[4];
+      grid-template: repeat(4, 30px) auto auto/repeat(4, 1fr);
+  grid-gap: 7px;
+}
+
+aside .container button {
+  border: none;
+  padding: 7px 8px;
+  background: #00a651;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+aside .container button:hover {
+  opacity: .9;
+}
+
+aside .container .story-post {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+}
+
+aside .container .downloadImage {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}
+
+aside .container .clearCanvas {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / 5;
+}
+
+aside .container .undo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+aside .container .redo {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+aside .container .eraser {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / 5;
+}
+
+aside .container .eraserActive {
+  color: red;
+  background: white;
+}
+
+aside .container .brushColor {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  margin: auto;
+  cursor: pointer;
+}
+
+aside .container .brushSizeContainer {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  margin: auto;
+}
+
+aside .container .brushSizeContainer input {
+  cursor: pointer;
+}
+
+aside .container .sizeButtons {
+  width: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[2] auto auto;
+  -ms-grid-columns: (auto)[3];
+      grid-template: repeat(2, auto) auto auto/repeat(3, auto);
+  grid-gap: 7px;
+}
+
+aside .container .sizeButtons button {
+  width: 70px;
+  height: 30px;
+  margin: auto;
+}
+
+aside .container .colorButtons {
+  width: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[5] auto auto;
+  -ms-grid-columns: (auto)[3];
+      grid-template: repeat(5, auto) auto auto/repeat(3, auto);
+  grid-gap: 7px;
+  margin-top: -14px;
+}
+
+aside .container .colorButtons button {
+  width: 70px;
+  height: 30px;
+  margin: auto;
+}
+
+aside .container .colorButtons button:hover {
+  opacity: .9;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: #72d3a3;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+main canvas {
+  background: white;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+}
+/*# sourceMappingURL=style.css.map */
